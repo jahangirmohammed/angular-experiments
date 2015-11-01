@@ -1,7 +1,10 @@
 # experiments
 
-This project is a collection of few ideas implemented using angular -
-1. Actors Search - Given a movie name, find actors.
+This project is a collection of few ideas implemented using angular 
+* Actors Search - Given a movie name, find actors.
+
+The implementation can be accessed at:
+http://jahangirmohammed.github.io/angular-experiments/app/
 
 ### Install Dependencies
 
@@ -46,8 +49,8 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
 app/                    --> all of the source files for the application
   app.css               --> default stylesheet
   components/           --> all app specific modules
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
+  actors-search/                --> the actors search view template and logic
+    view.html            --> the partial template
     view.js              --> the controller logic
     view_test.js         --> tests of the controller
   app.js                --> main application module
