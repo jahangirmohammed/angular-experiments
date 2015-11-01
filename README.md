@@ -48,8 +48,8 @@ app/                    --> all of the source files for the application
   components/           --> all app specific modules
   view1/                --> the view1 view template and logic
     view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
+    view.js              --> the controller logic
+    view_test.js         --> tests of the controller
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
   index-async.html      --> just like index.html, but loads js files asynchronously

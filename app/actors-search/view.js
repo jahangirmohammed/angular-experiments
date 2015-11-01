@@ -3,14 +3,14 @@
  */
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('experiments.actors-search', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
-      $routeProvider.when('/view1', {
-        templateUrl: 'view1/view1.html',
-        controller: 'View1Ctrl'
+      $routeProvider.when('/actors-search', {
+        templateUrl: 'actors-search/view.html',
+        controller: 'ActorsSearchController'
       });
     }])
-    .controller('View1Ctrl', ['$scope','$http',function($scope, $http) {
+    .controller('ActorsSearchController', ['$scope','$http',function($scope, $http) {
       $scope.searchForActors = function() {
         var $url = "http://www.omdbapi.com/?t="+$scope.movieName+"&y=&plot=short&r=json"
         $http({
