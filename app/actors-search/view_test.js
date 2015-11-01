@@ -10,7 +10,7 @@ describe('experiments.actors-search module', function() {
       scope = $rootScope.$new();
       actorsSearchCtrl = $controller('ActorsSearchController', {$scope: scope});
     }));
-    it('should ....', function() {
+    it('should be defined', function() {
       expect(actorsSearchCtrl).toBeDefined();
     });
   });

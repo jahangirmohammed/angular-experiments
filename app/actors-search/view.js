@@ -12,10 +12,11 @@ angular.module('experiments.actors-search', ['ngRoute'])
     }])
     .controller('ActorsSearchController', ['$scope','$http',function($scope, $http) {
       $scope.searchForActors = function() {
-        var $url = "http://www.omdbapi.com/?t="+$scope.movieName+"&y=&plot=short&r=json"
+        var movie = $scope.movieName
+        var $omdbUrl = "http://www.omdbapi.com/?t="+movie+"&y=&plot=short&r=json"
         $http({
           method: 'GET',
-          url: $url
+          url: $omdbUrl
         }).then(function successCallback(response) {
           if(response.data.Actors){
             $scope.actors = response.data.Actors.split(",")
