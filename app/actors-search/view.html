@@ -1,0 +1,17 @@
+<p>Enter movie name and this will display actors in the movie.</p>
+<form ng-submit="searchForActors()">
+    <input type="text" ng-model="movieName"  size="30"
+           placeholder="movie name">
+    <input class="btn-primary" type="submit" value="search">
+</form>
+
+<div ng-show = "movieName && actors.length > 0">
+    <p>Actors in the movie :</p>
+    <ul style="list-style-type:square">
+        <li ng-repeat="actor in actors">
+            {{ actor }}
+        </li>
+    </ul>
+</div>
+
+<p ng-show = "movieName && actors.length == 0">Movie not found!</p>
