@@ -4,4 +4,9 @@
            placeholder="movie name">
     <input class="btn-primary" type="submit" value="search">
 </form>
-<p>Actors in the movie : {{ actors }}</p>
+<p>Actors in the movie :</p>
+<ul style="list-style-type:square">
+    <li ng-repeat="actor in actors">
+        {{ actor }}
+    </li>
+</ul>

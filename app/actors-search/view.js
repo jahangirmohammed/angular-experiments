@@ -17,11 +17,10 @@ angular.module('experiments.actors-search', ['ngRoute'])
           method: 'GET',
           url: $url
         }).then(function successCallback(response) {
-          if(response.data.Response)
-            $scope.actors = response.data.Actors
+          if(response.data.Actors)
+            $scope.actors = response.data.Actors.split(",")
           else
-            $scope.actors = "Movie not found"
-
+            $scope.actors = []
         }, function errorCallback(response) {
           console.log("failure")
         });
