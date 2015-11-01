@@ -1,0 +1,7 @@
+<p>Actors Search. Enter movie name and this will display actors in the movie.</p>
+<form ng-submit="searchForActors()">
+    <input type="text" ng-model="movieName"  size="30"
+           placeholder="movie name">
+    <input class="btn-primary" type="submit" value="search">
+</form>
+<p>Actors in the movie : {{ actors }}</p>
