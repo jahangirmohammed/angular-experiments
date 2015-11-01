@@ -61,16 +61,4 @@ npm run test-single-run
 
 ### End to end testing
 
-Steps below :
-
-```
-npm start
-```
-
-```
-npm run update-webdriver
-```
-
-```
-npm run protractor
-```
+TODO
