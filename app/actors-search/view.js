@@ -17,13 +17,13 @@ angular.module('experiments.actors-search', ['ngRoute'])
           method: 'GET',
           url: $url
         }).then(function successCallback(response) {
-          if(response.data.Actors)
+          if(response.data.Actors){
             $scope.actors = response.data.Actors.split(",")
-          else
+          }
+          else {
             $scope.actors = []
+          }
         }, function errorCallback(response) {
-          console.log("failure")
         });
-        console.log($scope.movieName)
       }
     }]);
