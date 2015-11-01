@@ -1,6 +1,6 @@
 # experiments
 
-This project is a collection of few ideas implemented using angular 
+This project is a collection of few ideas implemented using angular to get myself acquainted with angularJS:
 * Actors Search - Given a movie name, find actors.
 
 The implementation can be accessed at:
