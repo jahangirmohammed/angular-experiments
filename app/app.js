@@ -6,5 +6,5 @@ angular.module('experiments', [
   'experiments.actors-search'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/'});
+  $routeProvider.otherwise({redirectTo: '/actors-search'});
 }]);
