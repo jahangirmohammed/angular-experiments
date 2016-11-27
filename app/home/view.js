@@ -5,8 +5,8 @@
 
 angular.module('experiments.actors-search', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
-      $routeProvider.when('/actors-search', {
-        templateUrl: 'actors-search/view.html',
+      $routeProvider.when('/home', {
+        templateUrl: 'home/view.html',
         controller: 'ActorsSearchController'
       });
     }])

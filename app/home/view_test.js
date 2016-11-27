@@ -1,10 +1,10 @@
 'use strict';
 
-describe('experiments.actors-search module', function() {
+describe('home', function() {
 
-  beforeEach(module('experiments.actors-search'));
+  beforeEach(module('home'));
 
-  describe('actors-search controller', function(){
+  describe('controller', function(){
     var scope, actorsSearchCtrl;
     beforeEach(inject(function($rootScope, $controller) {
       scope = $rootScope.$new();

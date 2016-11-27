@@ -1,6 +1,6 @@
 # Movies Search App
 
-* Movies Search - Find actors or cast in a movie.
+Movies Search - Find actors or cast in a movie.
 
 Try it out at -
 http://jahangirmohammed.github.io/movie-search/app/
